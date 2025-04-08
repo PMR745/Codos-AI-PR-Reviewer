@@ -1,0 +1,16 @@
+[config]
+model = "claude-3-opus-20240229"
+
+[pr_reviewer]
+enable_review_labels_effort = true
+enable_auto_approval = true
+
+[github_app]
+handle_pr_actions = ['opened', 'reopened', 'ready_for_review']
+pr_commands = [
+    "/review --pr_reviewer.require_tests_review=true",
+]
+handle_push_trigger = true
+push_commands = [
+    "/review",
+]
