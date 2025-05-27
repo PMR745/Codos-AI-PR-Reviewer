@@ -14,13 +14,6 @@ from pr_agent.git_providers.local_git_provider import LocalGitProvider
 
 _GIT_PROVIDERS = {
     'github': GithubProvider,
-    'gitlab': GitLabProvider,
-    'bitbucket': BitbucketProvider,
-    'bitbucket_server': BitbucketServerProvider,
-    'azure': AzureDevopsProvider,
-    'codecommit': CodeCommitProvider,
-    'local': LocalGitProvider,
-    'gerrit': GerritProvider,
 }
 
 
